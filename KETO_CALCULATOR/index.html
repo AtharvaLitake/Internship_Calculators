@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KetoCalculator</title>
+    <!--CSS FILE-->
+    <link rel="stylesheet" href="keto.css">
+</head>
+
+<body>
+    <div class="heading_content">
+        <h1>Ketogenic Calculator</h1>
+        <h2>Starting on a ketogenic diet? Let's calculate how much you should eat.</h2>
+        <h3>We use the information you put in to create an accurate keto nutrition profile for you.</h3>
+    </div>
+    <form id="form"  onsubmit="return false;">
+        <div class="ketocal">
+            <div class="input_keto">
+                <div class="label_input">
+                    <h2>YOUR GENDER</h2>
+                </div>
+                <div class="age_input">
+                    <div class="radio_tile_group_gender">
+                        <div class="gender_custom_container">
+                            <input id="male" type="radio" name="gender" value="male" checked>
+                            <div class="gender_tile" style="text-align: center;">
+                                <img src="./Images/male.png" alt="">
+                                <label for="male"><b>MALE</b><br></label>
+                            </div>
+                        </div>
+                        <div class="gender_custom_container">
+                            <input id="female" type="radio" name="gender" value="female">
+                            <div class="gender_tile" style="text-align: center;">
+                                <img src="./Images/female.png" alt="">
+                                <label for="female"><b>FEMALE</b><br></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="input_keto">
+                <div class="label_input">
+                    <h2>YOUR AGE</h2>
+                </div>
+                <div class="age_input_custom">
+                    <input type="number" id="myage" required>
+                    <label for="">Years</label>
+                </div>
+            </div>
+            <!-- Horizontal Ruler -->
+            <hr>
+            <div class="input_keto">
+                <div class="label_input">
+                    <h2>YOUR HEIGHT</h2>
+                </div>
+                <div class="age_input_custom">
+                    <input type="number" id="height_ft" required>
+                    <label for="">Ft</label>
+                    <input type="number" id="height_inc" required>
+                    <label for="">In</label>
+                </div>
+            </div>
+            <!-- Horizontal Ruler -->
+            <hr>
+            <div class="input_keto">
+                <div class="label_input">
+                    <h2>YOUR WEIGHT</h2>
+                </div>
+                <div class="age_input_custom">
+                    <input type="number" id="weight">
+                    <label for="">Kg</label>
+                </div>
+            </div>
+            <!-- Horizontal Ruler -->
+            <hr>
+            <div class="input_keto">
+                <div class="label_input">
+                    <h2>BODY FAT PERCENTAGE</h2>
+                </div>
+                <div class="age_input_custom">
+                    <h4>What is your body fat percentage?</h4>
+                    <p>BMI and body fat are two different measurements. If you don't have calipers or a DEXA machine,
+                        use our guide to visually estimate body fat percentage.</p>
+                    <input type="number" value="20">
+                    <label for="">%</label>
+                </div>
+            </div>
+            <hr>
+            <div class="input_keto">
+                <div class="label_input">
+                    <h2>DEFICIT / SURPLUS</h2>
+                </div>
+                <div class="age_input_custom">
+                    <h4>What are your end goals of a ketogenic diet?</h4>
+                    <select id="end_goals" name="weight_goal">
+                        <option value="Lose Weight">Lose Weight</option>
+                        <option value="Maintain">Maintain</option>
+                        <option value="Gain Muscle">Gain Muscle</option>
+                    </select>
+                    <input type="number" id="weight_goals" required>
+                    <label for="">%</label>
+                    <p>It's recommended to never go above a 30% calorie deficit. It's also recommended that you never go
+                        above a 15% calorie surplus. If selected <b>Maintain</b> put input as 0.If you do, negative
+                        results may happen.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="input_keto">
+                <div class="label_input">
+                    <h2>ACTIVITY LEVEL</h2>
+                </div>
+                <div class="age_input">
+                    <div class="radio_button_container">
+                        <div class="radio_tile_group">
+                            <div class="input_custom_container">
+                                <input id="walk" type="radio" name="radio1" value="1.2" checked>
+                                <div class="radio_tile">
+                                    <img src="./Images/icon2.png" alt="">
+                                    <label for="walk"><b>Sedentary</b><br>
+                                        Not much activity with little to no exercise. Typically a desk job.</label>
+                                </div>
+                            </div>
+                            <div class="input_custom_container">
+                                <input id="walk" type="radio" name="radio1" value="1.375">
+                                <div class="radio_tile">
+                                    <img src="./Images/icon4.png" alt="">
+                                    <label for="walk"><b>Lightly Active</b><br>
+                                        Daytime walking with less than 20 minutes exercise per day. Usually light
+                                        strolls after
+                                        meals.</label>
+                                </div>
+                            </div>
+                            <div class="input_custom_container">
+                                <input id="walk" type="radio" name="radio1" value="1.55">
+                                <div class="radio_tile">
+                                    <img src="./Images/icon1.png" alt="">
+                                    <label for="walk"><b>Moderately Active</b><br>
+                                        A lightly active day job with physical labor or scheduled exercise (i.e. riding
+                                        your bike to
+                                        work or lifting a few times a week).</label>
+                                </div>
+                            </div>
+                            <div class="input_custom_container">
+                                <input id="walk" type="radio" name="radio1" value="1.725">
+                                <div class="radio_tile">
+                                    <img src="./Images/icon3.png" alt="">
+                                    <label for="walk"><b>Very Active</b><br>
+                                        A very active day job (i.e. construction or industrial worker) or intense amount
+                                        of exercise
+                                        every day.</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="input_keto">
+                <div class="label_input">
+                    <h2>CARBS & PROTEIN</h2>
+                </div>
+                <div class="protein_input">
+                    <h4>How many carbs do you want to consume?</h4>
+                    <p>It is highly recommended that on a ketogenic diet, you keep your carb intake to 5% or less of
+                        total calories. This works out to be an average of 20g net carbs a day.</p>
+                    <input type="number" value="20">
+                    <h4>How much protein do you want to consume?</h4>
+                    <p>Protein shouldn't be over-consumed on a ketogenic diet. If too much is eaten, it could lead to
+                        slower weight loss and smaller levels on ketones in the blood.</p>
+                    <div class="protein_intake">
+                        <div class="intake1">
+                            <img src="./Images/protein3.png" alt="">
+                            <p>If you're sedentary, we suggest between 0.6g and 0.8g protein.</p>
+                        </div>
+                        <div class="intake1">
+                            <img src="./Images/protein2.png" alt="">
+                            <p>If you're active, we suggest between 0.8g and 1.0g protein</p>
+                        </div>
+                        <div class="intake1">
+                            <img src="./Images/protein1.png" alt="">
+                            <p>If you lift weights, we suggest between 1.0g and 1.2g protein.</p>
+                        </div>
+                    </div>
+                    <div class="calculate_input">
+                        <div class="calculate">
+                            <input type="number" id="protein_intake" value="0.6">
+                            <label for="">gm</label>
+                        </div>
+                        <div class="calculate_submit">
+                            <input type="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="centering_output">
+        <div class="h1_nonediv" id="h1_nonediv">
+            <h1>How much should you be eating per day?
+            </h1>
+        </div>
+        <div class="output_div">    
+            <div class="output_values" id="output1">
+                <h1 id="calorie_goal"></h1>
+                <p>Total Calories Intake Advised</p>
+            </div>
+            <div class="output_values" id="output2">
+                <h1 id="protein"></h1>
+                <p>Protein Intake Advised</p>
+            </div>
+            <div class="output_values" id="output3">
+                <h1 id="fats"></h1>
+                <p>Fats Intake Advised</p>
+            </div>
+            <div class="output_values" id="output4">
+                <h1 id="carb"></h1>
+                <p>Carb Intake Advised</p>
+            </div>
+        </div>
+    </div>
+
+    <!--JAVASCRIPT FILE-->
+    <script src="keto.js"></script>
+</body>
+
+</html>

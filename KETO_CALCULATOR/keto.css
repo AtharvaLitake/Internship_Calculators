@@ -1,0 +1,513 @@
+:root {
+  --primary-color: #962161;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading_content {
+  text-align: center;
+}
+.heading_content h1 {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.heading_content h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.heading_content h3 {
+  font-weight: 300;
+}
+/*starting of div of main calculator*/
+.ketocal {
+  display: grid;
+  grid-template-columns: 75%;
+  row-gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 10px;
+}
+.input_keto {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  justify-items: left;
+  align-items: center;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  column-gap: 40px;
+}
+/*LABEL CSS*/
+.label_input {
+  font-size: 10px;
+  color: rgb(150, 149, 149);
+  font-weight: 300;
+}
+/*Input css*/
+.age_input input {
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(150, 149, 149, 0.194);
+  font-weight: 400;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  width: 80%;
+}
+.ketocal hr {
+  height: 2px;
+  background-color: rgba(150, 149, 149, 0.491);
+  width: 100%;
+  border: none;
+}
+.age_input h4 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.age_input p {
+  font-weight: 300;
+  font-size: 15px;
+  color: rgba(150, 149, 149, 0.858);
+  margin-bottom: 10px;
+  text-align: justify;
+}
+.protein_input h4 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.protein_input p {
+  font-weight: 300;
+  font-size: 15px;
+  color: rgba(150, 149, 149, 0.858);
+  margin-bottom: 10px;
+  text-align: justify;
+}
+.protein_input input {
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(150, 149, 149, 0.194);
+  font-weight: 400;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  width: 20%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.protein_intake {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 30px;
+  margin-top: 20px;
+  width: 100%;
+}
+.protein_intake img {
+  height: 80px;
+  width: 80px;
+}
+.intake1 {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  justify-content: center;
+  row-gap: 20px;
+}
+.intake1 p {
+  font-size: 13px;
+  color: black;
+}
+
+/*BUTTON CSS*/
+.radio_tile_group {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 20px;
+  column-gap: 20px;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.gender_custom_container {
+  position: relative;
+  height: 7rem;
+  border-radius: 8px;
+  width: 7rem;
+  margin: 0.5rem;
+}
+.gender_custom_container input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+.gender_custom_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  transition: all 300ms ease;
+  color: rgba(0, 0, 0, 0.77);
+  padding: 10px;
+  text-align: justify;
+}
+
+.gender_tile {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  border-radius: 8px;
+  padding: 10px;
+  height: 110px;
+  width: 80%;
+  background-color: rgba(130, 130, 130, 0.201);
+}
+.gender_custom_container input:checked + .gender_tile {
+  background-color: var(--primary-color);
+  box-shadow: 0px 0px 12px var(--primary-color);
+  color: white;
+}
+.gender_custom_container input:hover + .gender_tile {
+  box-shadow: 0px 0px 12px var(--primary-color);
+}
+
+.gender_tile img {
+  height: 55px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.radio_tile_group_gender {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 20px;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+/*gender button css ends here */
+/*activity level button css starts here*/
+.input_custom_container {
+  position: relative;
+  height: 7rem;
+  border-radius: 8px;
+  width: 7rem;
+  margin: 0.5rem;
+}
+.input_custom_container input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+.input_custom_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  transition: all 300ms ease;
+  color: rgba(0, 0, 0, 0.77);
+  padding: 10px;
+  text-align: justify;
+}
+.input_custom_container img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+.input_custom_container label {
+  font-size: 16px;
+  line-height: 22px;
+}
+.radio_tile {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  border-radius: 8px;
+  padding: 15px;
+  height: 260px;
+  box-shadow: 0 0 5px var(--primary-color);
+}
+.input_custom_container input:checked + .radio_tile {
+  background-color: var(--primary-color);
+  box-shadow: 0px 0px 12px var(--primary-color);
+  color: white;
+}
+.input_custom_container input:hover + .radio_tile {
+  box-shadow: 0px 0px 12px var(--primary-color);
+}
+.calculate_input {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  justify-content: left;
+  justify-items: left;
+}
+.calculate input {
+  width: 48%;
+}
+.calculate_submit input {
+  width: 200px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 25px;
+  transition: all 0.8s ease;
+  padding: 5px;
+}
+.calculate_submit input:hover {
+  box-shadow: 0 0 10px rgba(115, 115, 115, 0.829);
+  background-color: #400023;
+}
+.age_input_custom {
+  width: 100%;
+}
+.age_input_custom input {
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(150, 149, 149, 0.194);
+  font-weight: 400;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  width: 40%;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.age_input_custom label {
+  margin-right: 30px;
+}
+.age_input_custom select {
+  text-align: center;
+  font-size: 16px;
+  background-color: rgba(150, 149, 149, 0.194);
+  font-weight: 400;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  width: 30%;
+  margin-right: 20px;
+}
+.age_input_custom h4 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.age_input_custom p {
+  font-weight: 300;
+  font-size: 15px;
+  color: rgba(150, 149, 149, 0.858);
+  margin-bottom: 10px;
+  text-align: justify;
+}
+.centering_output {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 10px;
+  justify-content: center;
+  justify-items: center;
+}
+.h1_nonediv {
+  color: #400023;
+  margin-bottom: 10px;
+  display: none;
+}
+.output_div {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  row-gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  width: 70%;
+  column-gap: 20px;
+}
+.output_values {
+  width: 100%;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  height: 120px;
+  margin-bottom: 10px;
+  display: none;
+}
+.output_values h1 {
+  margin-bottom: 15px;
+}
+
+/*Responsive Code */
+@media (max-width: 990px) {
+  .heading_content h1 {
+    font-size: 22px;
+  }
+  .heading_content h2 {
+    font-size: 18px;
+  }
+  .heading_content h3 {
+    font-size: 16px;
+  }
+  .age_input input {
+    width: 40%;
+  }
+  .age_input_custom input {
+    width: 40%;
+  }
+  .input_custom_container label {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .h1_nonediv h1{
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .heading_content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .radio_tile_group_gender {
+    column-gap: 0px;
+  }
+  .radio_tile_group {
+    grid-template-columns: 100%;
+  }
+  .input_custom_container label {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .age_input_custom select {
+    font-size: 12px;
+  }
+  .radio_tile {
+    height: 270px;
+  }
+  .protein_intake {
+    grid-template-columns: 50% 50%;
+    row-gap: 10px;
+  }
+  .age_input_custom h4 {
+    font-size: 14px;
+  }
+  .age_input h4 {
+    font-size: 14px;
+  }
+  .age_input_custom p {
+    font-size: 12px;
+  }
+  .age_input p {
+    font-size: 12px;
+  }
+  .label_input h2 {
+    font-size: 12px;
+  }
+  .protein_input h4 {
+    font-size: 14px;
+  }
+  .protein_input p {
+    font-size: 12px;
+  }
+  .age_input input {
+    width: 60%;
+  }
+  .age_input_custom input {
+    width: 60%;
+  }
+  .protein_input input {
+    width: 60%;
+  }
+  .calculate_input {
+    grid-template-columns: 100%;
+  }
+  .calculate_submit input {
+    width: 200px;
+  }
+  .age_input_custom label {
+    font-size: 14px;
+  }
+  .input_custom_container label {
+    font-size: 11px;
+  }
+  .age_input_custom select {
+    width: 60%;
+  }
+  .output_div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 70%;
+    column-gap: 20px;
+  }
+  .h1_nonediv h1{
+    font-size: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .heading_content h1 {
+    font-size: 20px;
+  }
+  .heading_content h2 {
+    font-size: 16px;
+  }
+  .heading_content h3 {
+    font-size: 14px;
+  }
+  .gender_custom_container {
+    width: 10rem;
+  }
+  .radio_tile_group_gender {
+    grid-template-columns: 60%;
+  }
+  .output_values {
+    font-size: 14px;
+  }
+  .output_values h1 {
+    font-size: 20px;
+  }
+  .protein_intake {
+    grid-template-columns: 100%;
+    row-gap: 20px;
+  }
+  .h1_nonediv h1{
+    font-size: 16px;
+  }
+}

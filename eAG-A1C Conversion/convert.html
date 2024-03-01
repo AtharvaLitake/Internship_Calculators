@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EAG - A1C Conversion</title>
+    <link rel="stylesheet" href="convert.css" />
+  </head>
+  <body>
+    <div class="conversion_heading">
+      <h1>eAG/A1C Conversion Calculator</h1>
+    </div>
+    <form action="" id="form">
+      <div class="choose_grid"> 
+        <div class="source">
+          <p>Choose source:</p>
+          <input type="radio" name="source" id="A1C" value="A1C" checked />
+          <label for="A1C">A1C to eAG</label>
+          <br />
+          <input type="radio" name="source" id="eAG" value="eAG" />
+          <label for="eAG">eAG to A1C</label>
+          <p>Unit to calculate from</p>
+        </div>
+        <div class="units_from">
+          <p>Choose source:</p>
+          <input type="radio" name="unit" id="mg" value="mg" checked />
+          <label for="mg">mg/dL</label>
+          <br />
+          <input type="radio" name="unit" id="mmol" value="mmol" />
+          <label for="mmol">mmol/L</label>
+          <p>Unit to calculate to</p>
+        </div>
+      </div>
+      <div class="input_div_source">
+        <h4>Source Value</h4>
+        <input type="number" id="source_value" step="0.01" required />
+        <input type="submit" value="Calculate" />
+      </div>
+    </form>
+    <div class="centering_output">
+      <div class="h1_nonediv" id="h1_nonediv">
+      </div>
+      <div class="output_div" id="output1">
+              <h1 id="BMR"></h1>
+      </div>
+  </div>
+    <script src="convert.js"></script>
+  </body>
+</html>

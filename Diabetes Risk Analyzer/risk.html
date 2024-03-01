@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diabetes Risk Analyzer</title>
+  <link rel="stylesheet" href="risk.css" />
+</head>
+
+<body>
+  <div class="risk_div">
+    <h1>Are You at a Risk for Type-2 Diabetes ?</h1>
+  </div>
+  <form action="" id="form">
+    <div class="risk_div">
+      <div class="questions_div">
+        <h2>Diabetes Risk Test</h2>
+        <p id="sub_title">
+          About 1 in 5 Americans with diabetes is undiagnosed. Could you be
+          one of the 8.5 million Americans who has diabetes and doesn’t know
+          it? Take the test and learn more about your risk for getting type 2
+          diabetes.
+        </p>
+        <div class="numbering">
+          <p>1</p>
+        </div>
+        <label for="">How old are you? </label>
+        <div class="question">
+          <br />
+          <input type="radio" name="age" id="" value="0" checked />
+          <label for="">Less than 40 years old</label>
+          <br />
+          <input type="radio" name="age" id="" value="1" />
+          <label for="">40-49 years</label>
+          <br />
+          <input type="radio" name="age" id="" value="2" />
+          <label for="">50-59 years</label>
+          <br />
+          <input type="radio" name="age" id="" value="3" />
+          <label for="">60 years or older</label>
+          <br />
+        </div>
+        <!--NEW DIV-->
+        <div class="numbering">
+          <p>2</p>
+        </div>
+        <label for="">Are you a man or a woman? </label>
+        <div class="question">
+          <br />
+          <input type="radio" name="gender" id="" checked value="1" />
+          <label for="">Man</label>
+          <br />
+          <input type="radio" name="gender" id="" value="0" />
+          <label for="">Woman</label>
+          <br />
+        </div>
+        <!--NEW QUESTION-->
+        <div class="numbering">
+          <p>3</p>
+        </div>
+        <label for="">Are you a woman who has ever been diagnosed with gestational
+          diabetes or given birth to a baby weighing 9 pounds or more?
+        </label>
+        <div class="question">
+          <br />
+          <input type="radio" name="birth" id="" checked value="1" />
+          <label for="">Yes </label>
+          <br />
+          <input type="radio" name="birth" id="" value="0" />
+          <label for="">No</label>
+          <br />
+        </div>
+        <!--NEW QUESTION-->
+        <div class="numbering">
+          <p>4</p>
+        </div>
+        <label for="">Have you ever been diagnosed with high blood pressure?
+        </label>
+        <div class="question">
+          <br />
+          <input type="radio" name="blood" id="" checked value="1" />
+          <label for="">Yes </label>
+          <br />
+          <input type="radio" name="blood" id="" value="0" />
+          <label for="">No</label>
+          <br />
+        </div>
+        <!--NEW QUESTION-->
+        <div class="numbering">
+          <p>5</p>
+        </div>
+        <label for="">Do you have a mother, father, sister, or brother with diabetes?
+        </label>
+        <div class="question">
+          <br />
+          <input type="radio" name="heriditary" id="" value="1" checked />
+          <label for="">Yes </label>
+          <br />
+          <input type="radio" name="heriditary" id="" value="0" />
+          <label for="">No</label>
+          <br />
+        </div>
+        <!--NEW QUESTION-->
+        <div class="numbering">
+          <p>6</p>
+        </div>
+        <label for="">Are you physically active? </label>
+        <div class="question">
+          <br />
+          <input type="radio" name="active_physically" id="" value="0" checked />
+          <label for="">Yes </label>
+          <br />
+          <input type="radio" name="active_physically" value="1" id="" />
+          <label for="">No</label>
+          <br />
+        </div>
+        <!--NEW QUESTION-->
+        <div class="numbering">
+          <p>7</p>
+        </div>
+        <label for="">What is your Weight (kgs) ? </label>
+        <div class="question_text">
+          <br />
+          <input type="number" id="weight" required/>
+          <label for="">Kg</label>
+          <br />
+        </div>
+        <!--NEW QUESTION-->
+        <div class="numbering">
+          <p>8</p>
+        </div>
+        <label for="">What is your Height (Ft & in) ? </label>
+        <div class="question_text">
+          <br />
+          <input type="number" id="ft" required/>
+          <label for="">Ft</label>
+          <br />
+          <input type="number" id="inc" required/>
+          <label for="">in</label>
+          <br />
+        </div>
+        <input type="submit" value="Calculate" />
+        <div class="centering_output">
+          <div class="h1_nonediv" id="h1_nonediv">
+          </div>
+          <div class="output_div" id="output1">
+            <h1 id="BMR"></h1>
+            <h3 id="risk_value"></h3>
+          </div>
+        </div>
+        <h2>The higher your score, the higher your risk.</h2>
+        <p id="sub_title">
+          <b>If you scored 5 or more</b>: You are at increased risk for having
+          type 2 diabetes. Talk to your doctor about simple blood testat to
+          check for dubetes or prediabetes. Early diagnosis and treatment can
+          prevent or delay heart attack, smoke, blindness, kidney disease, and
+          other health problems.
+        </p>
+        <p id="sub_title">
+          <b>If your score was below 5</b>: You may
+          be at increased risk for having prediabetes-blood sugar levels that
+          are higher than normal but not high enough to be called diabetes.
+          The good news for people with predabetes is that you can lower your
+          risk for type 2 diabetes. Talk to your beahh care team about getting
+          tested, particularly if you are over 35, have overweight or obesity,
+          or have a family member with diabetes. Find out about the small
+          steps you can take to prevent or delay type 2 diabetes and live a
+          long and healthy life.
+        </p>
+      </div>
+    </div>
+  </form>
+
+  <script src="risk.js"></script>
+</body>
+
+</html>
